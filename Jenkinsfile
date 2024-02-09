@@ -8,12 +8,12 @@ pipeline {
 	    }
 		stage ("1. Clean the old builds") {
 			steps {
-				sh "mvn -f maven_repo/ clean" 
+				sh "mvn -f helloapp/ clean" 
 			}
 		}
 		stage ("2. Build the new package") {
 			steps {
-				sh "mvn -f maven_repo/ install"
+				sh "mvn -f helloapp/ install"
 			}
 		}
 		stage ("3. Deploy the new package") {
