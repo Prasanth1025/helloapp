@@ -19,7 +19,6 @@ pipeline {
 		}
 		stage ("3. Deploy the new package") {
 			steps {
-			    sh "rm -rf /var/lib/jenkins/helloapp.jar"
 				sh "cp /var/lib/jenkins/workspace/First_Maven_PipeLineProject/helloapp/target/helloapp-0.0.1-SNAPSHOT.jar /var/lib/jenkins/helloapp.jar"
 				sh "java -jar helloapp.jar"
 			}
