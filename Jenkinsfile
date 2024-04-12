@@ -19,7 +19,7 @@ pipeline {
 		}
 		stage ("3. Deploy the new package") {
 			steps {
-				sh "cp /var/lib/jenkins/workspace/SpringBootProject/helloapp/target/helloapp-0.0.1-SNAPSHOT.jar /var/lib/jenkins/helloapp.jar"
+				sh "cp /var/lib/jenkins/workspace/HelloApp/helloapp/target/helloapp-0.0.1-SNAPSHOT.jar /var/lib/jenkins/helloapp.jar"
 				sh "java -jar /var/lib/jenkins/helloapp.jar"
 			}
 		}
