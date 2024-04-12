@@ -4,7 +4,7 @@ pipeline {
 		stage ("Clone the existing_repo") {
 	        steps {
 				sh "rm -rf helloapp"
-	            sh "git clone https://github.com/Prasanth1025/helloapp.git"
+	                        sh "git clone https://github.com/Prasanth1025/helloapp.git"
 	        }
 	    }
 		stage ("1. Clean the old builds") {
